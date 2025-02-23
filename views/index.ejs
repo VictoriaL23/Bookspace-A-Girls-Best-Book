@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+
+<body>
+    <div>
+            BOOKTOK 
+
+
+        <form id="generate_book" action="/book" method="POST">
+            <!-- to add id <input> -->
+            <button tyoe="submit" name="genre" value="dark_romance">Dark romance</button>
+            <button name="genre">Romantasy</button>
+            <button name="genre">Young Adult</button>
+            <button name="genre">Psycological Thriller</button>
+
+
+
+        </form>
+
+    </div>
+
+
+
+    <%- include("partials/footer.ejs") %>

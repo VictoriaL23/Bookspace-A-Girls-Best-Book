@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+
+
+
+<% if(locals.book){ %>
+
+    <h1> Made it </h1>
+    <img src="<%= book.cover %>" alt="Book Cover" />
+
+<% } else{ %>
+    <h1> OPPPPPPPSSSSS</h1>
+    <% } %>
+<%- include("partials/footer.ejs") %>

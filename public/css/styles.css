@@ -1,4 +1,8 @@
-
+/* HEADER CSS */
+.header,
+.header a {
+    color: #8c2f39 !important;
+}
 
 .mid-element{
 
@@ -7,19 +11,61 @@
 }
 
 .choice{
-    margin: 20px;
-    padding: 20px;
+    
+    margin: 2%;
+    border-radius: 15px;
+    padding: 32px;
+  border: 0px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 2px;
+
+}
+.choice:hover {
+  
+    filter: brightness(0.7); /* Darken the image on hover */
+    color: rgba(255, 255, 255, 1); /* Make text fully white */
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+
+#btn-con{
+    width: 75%; /* Adjust the width (try 40% or 30% if needed) */
+    max-width: 800px; /* Prevent it from being too large on bigger screens */
+    color: #fff;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+
 }
 
 #dark_romance{
-   
+
+        
         background: url("/images/dark_romance.jpg") no-repeat center center;
         background-size: cover; /* Ensures image fills the button */
-        border-radius: 10%;
         
-        
-    
+ 
 }
+
+
+#romantasy{
+    background: url("/images/romantasy.jpg") no-repeat center center;
+    background-size: cover; /* Ensures image fills the button */
+       
+}
+
+#young_adult{
+    background: url("/images/young_adult.jpg") no-repeat center center;
+    background-size: cover; /* Ensures image fills the button */
+}
+
+#psychological_horror{
+    background: url("/images/psychological_horror.png") no-repeat center center;
+    background-size: cover; /* Ensures image fills the button */
+}
+
 
 
 /* .glow-ring {

@@ -4,20 +4,31 @@
     color: #8c2f39 !important;
 }
 
-.mid-element{
-
-    background-image: linear-gradient(to right, #1c1b33 , #a45c6c);
-
+.header{
+    background-color: white;
+    z-index: 10; 
 }
 
-.choice{
-    
-    margin: 2%;
+/* MIDDLE ELEMENT */
+
+.mid-element{
+
+    background-image: linear-gradient(to right, #1c1b33, #a45c6c);
+    position: relative;
+    width: 100%; /* Ensures it spans the full width */
+    padding:20px;
+    overflow: hidden; /* Clips anything going outside */
+
+}
+/* BUTTON STYLES */
+
+.choice{   
+    margin: 3%;
     border-radius: 15px;
     padding: 32px;
-  border: 0px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.8);
-  letter-spacing: 2px;
+    border: 0px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
 
 }
 .choice:hover {
@@ -28,32 +39,28 @@
   }
 
 #btn-con{
-    width: 75%; /* Adjust the width (try 40% or 30% if needed) */
-    max-width: 800px; /* Prevent it from being too large on bigger screens */
+    margin-top: 5%;
+    margin-bottom: 15%;
+    width: 70%; /* Adjust the width (try 40% or 30% if needed) */
+    max-width: 1300px; /* Prevent it from being too large on bigger screens */
     color: #fff;
-  background-color: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  width: 100%;
-  border-radius: 15px;
-  padding: 32px;
-  backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
 
 }
 
-#dark_romance{
-
-        
+#dark_romance{        
         background: url("/images/dark_romance.jpg") no-repeat center center;
-        background-size: cover; /* Ensures image fills the button */
-        
- 
+        background-size: cover; /* Ensures image fills the button */       
 }
-
 
 #romantasy{
     background: url("/images/romantasy.jpg") no-repeat center center;
-    background-size: cover; /* Ensures image fills the button */
-       
+    background-size: cover; /* Ensures image fills the button */      
 }
 
 #young_adult{
@@ -68,16 +75,71 @@
 
 
 
-/* .glow-ring {
-    position: absolute;
+/* GLOWING RING CSS */
+
+.glow-ring{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 140, 0, 0.8), transparent);
     box-shadow: 0 0 20px rgba(255, 140, 0, 0.8),
                 0 0 40px rgba(255, 140, 0, 0.5);
-    top: 10%;
-    left: 50%;
     transform: translateX(-50%);
     animation: rotateGlow 6s infinite linear;
-} */
+}
+
+#ring1{
+    position: absolute; /* Keeps it in normal document flow */
+    top: 50%;
+    left: 80%;
+}
+
+#ring2{
+    
+    position: absolute; /* Keeps it in normal document flow */
+    top: -3%;
+    left: 2%;
+    z-index: 1; /* Keeps it below the header */
+}
+
+#ring3{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 100px;
+    height: 100px;
+}
+
+#ring4{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 75px;
+    height: 75px;
+}
+
+#ring5{
+    position: absolute;
+    top: -5%;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+}
+
+#ring6{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+#ring7{
+    position: absolute;
+    top: 78%;
+    left: 95%;
+    width: 250px;
+    height: 250px;
+}
+

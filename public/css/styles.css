@@ -1,0 +1,37 @@
+
+
+.mid-element{
+
+    background-image: linear-gradient(to right, #1c1b33 , #a45c6c);
+
+}
+
+.choice{
+    margin: 20px;
+    padding: 20px;
+}
+
+#dark_romance{
+   
+        background: url("/images/dark_romance.jpg") no-repeat center center;
+        background-size: cover; /* Ensures image fills the button */
+        border-radius: 10%;
+        
+        
+    
+}
+
+
+/* .glow-ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 140, 0, 0.8), transparent);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.8),
+                0 0 40px rgba(255, 140, 0, 0.5);
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rotateGlow 6s infinite linear;
+} */

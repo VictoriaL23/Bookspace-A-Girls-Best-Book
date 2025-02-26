@@ -7,7 +7,7 @@ const port = 3000;
 
 //use the body parser middleware
 //This is to access my static files 
-app.use(express.static("public")); 
+app.use(express.static("public"));  
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Render home page
@@ -90,12 +90,12 @@ async function generateRandomBook(data){
     }
     
     } catch (error) {
-        console.error("Error fetching data:", error.message);
+        // console.error("Error fetching data:", error.message);
     
-        res.status(error.response?.status || 500).json({
-            message: "Failed to fetch data",
-            error: error.message
-        });
+        // res.status(error.response?.status || 500).json({
+        //     message: "Failed to fetch data",
+        //     error: error.message
+        // });
     }
 
     //axios request to fetch the description 

@@ -1,6 +1,8 @@
 <%- include("partials/header.ejs") %>
 
-
+    <div id="search-section">
+        search here ! 
+    </div>
 
     <div class="mid-element">
 
@@ -12,11 +14,14 @@
             <div id="ring5" class="glow-ring"></div>
             <div id="ring6" class="glow-ring"></div>
             <div id="ring7" class="glow-ring"></div>
+            <div id="ring8" class="glow-ring"></div>
 
 
             
             <div id="btn-con" class="container justify-content-center flex-row text-center mx-auto">
                 <div class="row justify-content-center">
+                    <h1>Generate book</h1>
+                    <p>Choose a genre below to generate a random book based on the selected genre!</p>
                 <form id="generate_book" action="/book" method="POST">
                     <!-- to add id <input> -->
                     <button id="dark_romance" class="choice col-5" type="submit" name="genre" value="dark_romance">Dark Romance</button>
@@ -33,6 +38,7 @@
 
             nextt 
     </div>
+
         
 
 <%- include("partials/footer.ejs") %>

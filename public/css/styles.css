@@ -1,19 +1,67 @@
+
+
+h1{
+    font-family: "Dancing Script", serif;
+    font-size: xx-large;
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("/images/rose_vines.jpg") no-repeat center center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+}
+
+#content-box{
+    
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(252, 251, 251, 0.3);
+    text-align: center;
+}
+
+
+
 /* HEADER CSS */
 .header,
 .header a {
-    color: #8c2f39 !important;
+    color: #E6C2BF !important;
+    height: 130px;
 }
 
 .header{
-    background-color: white;
+    background: linear-gradient(135deg, #2E003E, #4A001F);
     z-index: 10; 
+}
+
+
+.footer{
+    background-color:#E6C2BF ;
+    height: 100px;
+}
+/* SEARCH ELEMENT */
+#search-section{
+
+
+    height: 300px;
+    background-color: #E6C2BF;
+
 }
 
 /* MIDDLE ELEMENT */
 
 .mid-element{
 
-    background-image: linear-gradient(to right, #1c1b33, #a45c6c);
+    /* background-image: linear-gradient(to right, #4A001F, #a45c6c); */
+    background: linear-gradient(135deg, #4A001F, #2E003E);
+
+    /* //background-color: #4A001F; */
     position: relative;
     width: 100%; /* Ensures it spans the full width */
     padding:20px;
@@ -25,7 +73,7 @@
 .choice{   
     margin: 3%;
     border-radius: 15px;
-    padding: 32px;
+    padding: 60px;
     border: 0px solid rgba(255,255,255,0.1);
     color: rgba(255,255,255,0.8);
     letter-spacing: 2px;
@@ -43,7 +91,7 @@
     margin-bottom: 15%;
     width: 70%; /* Adjust the width (try 40% or 30% if needed) */
     max-width: 1300px; /* Prevent it from being too large on bigger screens */
-    color: #fff;
+    color: #E6C2BF;
     background-color: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.1);
     width: 100%;
@@ -79,9 +127,9 @@
 
 .glow-ring{
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 140, 0, 0.897), transparent);
-    box-shadow: 0 0 20px rgba(140, 0, 255, 0.8),
-                0 0 40px rgba(255, 0, 234, 0.959);
+    background: radial-gradient(circle,  #F7E1D7, transparent);
+    box-shadow: 0 0 20px #9E758F,
+                0 0 40px #E6C2BF;
     transform: translateX(-50%);
     animation: rotateGlow 3s infinite linear;
 }
@@ -144,3 +192,16 @@
     height: 250px;
 }
 
+#ring8{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* BOOK PAGE CSSS */
+#book-page-middle{
+    background-color: #E6C2BF;
+}

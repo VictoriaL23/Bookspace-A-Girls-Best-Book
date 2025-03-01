@@ -78,24 +78,25 @@
 /* GLOWING RING CSS */
 
 .glow-ring{
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 140, 0, 0.8), transparent);
-    box-shadow: 0 0 20px rgba(255, 140, 0, 0.8),
-                0 0 40px rgba(255, 140, 0, 0.5);
+    background: radial-gradient(circle, rgba(255, 140, 0, 0.897), transparent);
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.8),
+                0 0 40px rgba(255, 0, 234, 0.959);
     transform: translateX(-50%);
-    animation: rotateGlow 6s infinite linear;
+    animation: rotateGlow 3s infinite linear;
 }
 
 #ring1{
     position: absolute; /* Keeps it in normal document flow */
+    width: 200px;
+    height: 200px;
     top: 50%;
     left: 80%;
 }
 
 #ring2{
-    
+    width: 200px;
+    height: 200px;
     position: absolute; /* Keeps it in normal document flow */
     top: -3%;
     left: 2%;

@@ -22,9 +22,10 @@ app.post("/book", async (req, res) =>{
     
    //Using axios to interact with OPEN LIBRARY API
     try{
-    const result = await axios.get("https://openlibrary.org/subjects/dark_romance.json", {
+    const result = await axios.get(`https://openlibrary.org/subjects/${genre}.json`, {
+ 
         params: {
-            limit: 300,
+            limit: 1000,
             details: true
         }
     });
@@ -53,6 +54,7 @@ async function generateRandomBook(data){
     let isbn = '';
     
     const bookList = data.works;
+    console.log(`The length of the book list is ` + bookList.length);
     
     //create random number to chose random object in array of objects 
     const randNum = Math.floor((Math.random() * bookList.length) + 1);
@@ -69,7 +71,7 @@ async function generateRandomBook(data){
     } else if (randBook.cover_edition_key) {
         coverUrl = `https://covers.openlibrary.org/b/olid/${randBook.cover_edition_key}-L.jpg`; 
     } else {
-        coverUrl = '/public/images/null.png';
+        coverUrl = '/images/null.png';
     }
 
     //Axios to fetch more book information
@@ -117,7 +119,8 @@ async function generateRandomBook(data){
             title: randBook.title,
             author: randBook.authors?.[0]?.name || "Unknown Author",
             cover: coverUrl,
-            bookIsbn: isbn
+            bookIsbn: isbn,
+            summary: description
         };
 }
 

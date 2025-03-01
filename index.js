@@ -19,12 +19,14 @@ app.get("/", (req,res) => {
 app.post("/book", async (req, res) =>{
     //get data from the users submitted form
     const genre = req.body.genre;
+    console.log(genre);
     
    //Using axios to interact with OPEN LIBRARY API
     try{
     const result = await axios.get(`https://openlibrary.org/subjects/${genre}.json`, {
  
         params: {
+            
             limit: 1000,
             details: true
         }
@@ -53,7 +55,7 @@ async function generateRandomBook(data){
     let pageNumber = 0;
     let isbn = '';
     
-    const bookList = data.works;
+    const bookList = data.works || data.docs;
     console.log(`The length of the book list is ` + bookList.length);
     
     //create random number to chose random object in array of objects 

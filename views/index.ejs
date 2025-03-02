@@ -15,23 +15,61 @@
             <div id="ring6" class="glow-ring"></div>
             <div id="ring7" class="glow-ring"></div>
             <div id="ring8" class="glow-ring"></div>
+            <div id="ring9" class="glow-ring"></div>
 
 
             
-            <div id="btn-con" class="container justify-content-center flex-row text-center mx-auto">
-                <div class="row justify-content-center">
+            <div id="btn-con" class="container justify-content-center d-flex flex-column text-center mx-auto">
+                <div class="col-12">
                     <h1>Generate book</h1>
-                    <p>Choose a genre below to generate a random book based on the selected genre!</p>
-                <form id="generate_book" action="/book" method="POST">
-                    <!-- to add id <input> -->
-                    <button id="dark_romance" class="choice col-5" type="submit" name="genre" value="dark_romance">Dark Romance</button>
-                    <button id="romantasy" class="choice col-5" type="submit"  name="genre" value="fiction_romance_fantasy">Romantasy</button>
-                    <div class="w-100 d-none d-md-block"></div>
-                    <button id="young_adult" class="choice col-5" type="submit"  name="genre" value="young_adult_fiction">Young Adult</button>
-                    <button id="psychological_horror" class="choice col-5" type="submit" name="genre" value="fiction_thrillers_psychological">Psycological Thriller</button>
-                 </form>
-                 </div>
+                    <h3>Choose a genre below to generate a random book based on the selected genre!</h3>
+                    <form id="generate_book" action="/book" method="POST">
+                        <div class="mt-4 row justify-content-center">
+                            <!-- First Card -->
+                            <div class="card_con col-md-3 col-sm-6 mb-3">
+                                <div class="card border-0 ">
+                                    <button id="dark_romance" class="choice" type="submit" name="genre" value="dark_romance">Dark Romance</button>
+                                    <div class="card-body btn-text">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Second Card -->
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="card border-0 " >
+                                    <button id="romantasy" class="choice" type="submit" name="genre" value="fiction_romance_fantasy">Romantasy</button>
+                                    <div class="card-body btn-text">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Third Card -->
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="card border-0 " >
+                                    <button id="young_adult" class="choice" type="submit" name="genre" value="young_adult_fiction">Young Adult</button>
+                                    <div class="card-body btn-text">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Fourth Card -->
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="card border-0 " >
+                                    <button id="psychological_horror" class="choice" type="submit" name="genre" value="fiction_thrillers_psychological">Psychological Thriller</button>
+                                    <div class="card-body btn-text">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+            
+            
 
             
 

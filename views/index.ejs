@@ -1,8 +1,49 @@
 <%- include("partials/header.ejs") %>
 
-    <div id="search-section">
-        search here ! 
+<div id="search-section" class="container-fluid text-center ">
+    <!-- Row for Text and Image -->
+    <div class="row d-flex justify-content-center align-items-center">
+        <!-- First main column -->
+        <div class="col-md-4 py-5 px-5">
+            <div class="row">
+                <div class="col-md-6 text-md-start text-center">
+                    <img src="/images/rose_decoration.jpg" alt="Rose decoration image" height="300px" width="270px">
+                </div>
+                <div class="col-md-6 text-md-start text-center align-self-start">
+                    <p>Welcome to <strong>Book Space</strong>, This is the perfect companion for any book lover, especially those who 
+                        enjoy diving into the depths of dark fiction. Simply enter the name of a book below or explore different
+                        genres to let fate decide your next literary escape. With so many incredible stories out there, why not add a 
+                        little mystery to your book selection? Let the journey begin!.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Second main column -->
+        <div class="col-md-4 py-5 px-5">
+            <div class="row">
+                <div class="col-md-6 text-md-start text-center">
+                    <img src="/images/bookshelf.jpg" alt="Bookshelf image" height="300px" width="270px">
+                </div>
+                <div class="col-md-6 text-md-start text-center align-self-start">
+                    <p>As a lover of dark fiction, I created this website to help fellow readers find their next captivating read.
+                        Growing up in the library, I was always on the hunt for my next book, and with so many options out there, 
+                        choosing the right one can feel overwhelming. This site is designed to make that choice easier—because sometimes, 
+                        you just need a little help finding the perfect book to match your mood.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Search Bar -->
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="search-bar-container col-md-6 col-lg-4 mx-auto">
+            <img id="search-bar-img" src="/images/rose_vine_decal.png" alt="Rose decoration image">
+            <input type="text" class="search-bar form-control" placeholder="Search...">
+        </div>
+    </div>
+</div>
+   
 
     <div class="mid-element">
 
@@ -25,7 +66,7 @@
                     <h3>Choose a genre below to generate a random book based on the selected genre!</h3>
                     <form id="generate_book" action="/book" method="POST">
                         <div class="mt-4 row justify-content-center">
-                            <!-- First Card -->
+                            <!-- First button -->
                             <div class="card_con col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 ">
                                     <button id="dark_romance" class="choice" type="submit" name="genre" value="dark_romance">Dark Romance</button>
@@ -35,7 +76,7 @@
                                 </div>
                             </div>
             
-                            <!-- Second Card -->
+                            <!-- Second button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
                                     <button id="romantasy" class="choice" type="submit" name="genre" value="fiction_romance_fantasy">Romantasy</button>
@@ -45,7 +86,7 @@
                                 </div>
                             </div>
             
-                            <!-- Third Card -->
+                            <!-- Third button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
                                     <button id="young_adult" class="choice" type="submit" name="genre" value="young_adult_fiction">Young Adult</button>
@@ -55,7 +96,7 @@
                                 </div>
                             </div>
             
-                            <!-- Fourth Card -->
+                            <!-- Fourth button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
                                     <button id="psychological_horror" class="choice" type="submit" name="genre" value="fiction_thrillers_psychological">Psychological Thriller</button>
@@ -68,13 +109,6 @@
                     </form>
                 </div>
             </div>
-            
-            
-
-            
-
-
-            nextt 
     </div>
 
         

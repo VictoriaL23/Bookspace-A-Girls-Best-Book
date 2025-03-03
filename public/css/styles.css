@@ -53,13 +53,72 @@ body{
     height: 100px;
 }
 /* SEARCH ELEMENT */
+
 #search-section{
-
-
-    height: 300px;
-    background-color: #E6C2BF;
-
+    height: 60vh;
+    background-color: #E6C2BF; 
 }
+
+.search-bar-container{
+    position: relative;
+}
+
+.search-bar-container input{
+    background-color: transparent;
+    color: #1C0D12; /* Ensure text is visible */
+    border: 1px solid #FF4D6D; /* Light border */
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.search-bar-container input:focus{
+    border-color: #FF4D6D; /* Brighter red on focus */
+    box-shadow: 0 0 8px #FF4D6D;
+    background-color: #3a2c32ad;
+}
+
+.search-bar-container input:not(:placeholder-shown) {
+    background-color: #3a2c32ad; /* Change color when user starts typing */
+    color: #F8F4EC; /* Change text color for better contrast when typing */
+}
+
+#search-bar-img{
+    position: absolute;
+    height: 230px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover; /* Ensure the image is scaled properly */
+    z-index: 0; /* Ensure the image stays behind the search bar */
+}
+
+.search-bar {
+    position: relative;
+    z-index: 1; /* Make sure the search bar is on top */
+    height: 100px; /* Set a height for the search bar */
+    text-align: center; /* Center the text inside */
+}
+
+
+.search-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder */
+}
+
+
+.search-element{
+    padding: 30px ;
+}
+ 
+  .rose-design {
+    position: absolute;
+    left: 30px;  /* Adjust based on how you want the rose to appear */
+  }
+  
+ 
 
 /* MIDDLE ELEMENT */
 

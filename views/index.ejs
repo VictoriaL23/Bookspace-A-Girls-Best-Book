@@ -1,33 +1,31 @@
 <%- include("partials/header.ejs") %>
 
-<div id="search-section" class="container-fluid text-center ">
+<div id="search-section" class="container-fluid text-center p-1">
     <!-- Row for Text and Image -->
-    <div class="row d-flex justify-content-center align-items-center">
+    <div class="row d-flex justify-content-center m-2">
         <!-- First main column -->
-        <div class="col-md-4 py-5 px-5">
+        <div class="col-md-6 col-sm-12 p-2">
             <div class="row">
-                <div class="col-md-6 text-md-start text-center">
-                    <img src="/images/rose_decoration.jpg" alt="Rose decoration image" height="300px" width="270px">
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                    <img class="search-img" src="/images/rose_decoration.jpg" alt="Rose decoration image">
                 </div>
-                <div class="col-md-6 text-md-start text-center align-self-start">
-                    <p>Welcome to <strong>Book Space</strong>, This is the perfect companion for any book lover, especially those who 
-                        enjoy diving into the depths of dark fiction. Simply enter the name of a book below or explore different
-                        genres to let fate decide your next literary escape. With so many incredible stories out there, why not add a 
+                <div class="col-md-6 col-sm-12 text-center align-self-start">
+                    <p class="web-text">Welcome to <strong>Book Space</strong>, simply enter the name of a book below or explore different
+                        genres to let fate decide your next literary escape. Why not add a 
                         little mystery to your book selection? Let the journey begin!.</p>
                 </div>
             </div>
         </div>
     
         <!-- Second main column -->
-        <div class="col-md-4 py-5 px-5">
+        <div class="col-md-6 col-sm-12 p-2">
             <div class="row">
-                <div class="col-md-6 text-md-start text-center">
-                    <img src="/images/bookshelf.jpg" alt="Bookshelf image" height="300px" width="270px">
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                    <img  class="search-img" src="/images/bookshelf.jpg" alt="Bookshelf image">
                 </div>
-                <div class="col-md-6 text-md-start text-center align-self-start">
-                    <p>As a lover of dark fiction, I created this website to help fellow readers find their next captivating read.
-                        Growing up in the library, I was always on the hunt for my next book, and with so many options out there, 
-                        choosing the right one can feel overwhelming. This site is designed to make that choice easier—because sometimes, 
+                <div class="col-md-6 col-sm-12 text-center align-self-start">
+                    <p class="web-text">As a lover of dark fiction, I created this website to help fellow readers find their next captivating read.
+                        This site is designed to make that choice easier—because sometimes, 
                         you just need a little help finding the perfect book to match your mood.
                     </p>
                 </div>
@@ -36,12 +34,12 @@
     </div>
 
     <!-- Search Bar -->
-    <div class="row d-flex justify-content-center align-items-center">
+    <!-- <div class="row d-flex justify-content-center align-items-center">
         <div class="search-bar-container col-md-6 col-lg-4 mx-auto">
             <img id="search-bar-img" src="/images/rose_vine_decal.png" alt="Rose decoration image">
             <input type="text" class="search-bar form-control" placeholder="Search...">
         </div>
-    </div>
+    </div> -->
 </div>
    
 
@@ -60,8 +58,8 @@
 
 
             
-            <div id="btn-con" class="container justify-content-center d-flex flex-column text-center mx-auto">
-                <div class="col-12">
+            <div id="btn-con" class="container">
+                <div>
                     <h1>Generate book</h1>
                     <h3>Choose a genre below to generate a random book based on the selected genre!</h3>
                     <form id="generate_book" action="/book" method="POST">
@@ -69,7 +67,7 @@
                             <!-- First button -->
                             <div class="card_con col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 ">
-                                    <button id="dark_romance" class="choice" type="submit" name="genre" value="dark_romance">Dark Romance</button>
+                                    <button id="dark_romance" class="choice" type="submit" name="genre" value="dark_romance"><span class="btn-header">Dark Romance</span></button>
                                     <div class="card-body btn-text">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
@@ -79,7 +77,7 @@
                             <!-- Second button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
-                                    <button id="romantasy" class="choice" type="submit" name="genre" value="fiction_romance_fantasy">Romantasy</button>
+                                    <button id="romantasy" class="choice" type="submit" name="genre" value="fiction_romance_fantasy"><span class="btn-header">Romantasy</span></button>
                                     <div class="card-body btn-text">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
@@ -89,7 +87,7 @@
                             <!-- Third button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
-                                    <button id="young_adult" class="choice" type="submit" name="genre" value="young_adult_fiction">Young Adult</button>
+                                    <button id="young_adult" class="choice" type="submit" name="genre" value="young_adult_fiction"><span class="btn-header">Young Adult</span></button>
                                     <div class="card-body btn-text">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
@@ -99,7 +97,7 @@
                             <!-- Fourth button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
-                                    <button id="psychological_horror" class="choice" type="submit" name="genre" value="fiction_thrillers_psychological">Psychological Thriller</button>
+                                    <button id="psychological_horror" class="choice" type="submit" name="genre" value="fiction_thrillers_psychological"><span class="btn-header"></span>Psychological Thriller</button>
                                     <div class="card-body btn-text">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>

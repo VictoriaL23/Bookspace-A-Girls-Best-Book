@@ -39,7 +39,9 @@ body{
 .header,
 .header a {
     color: #E6C2BF !important;
-    height: 130px;
+    height: auto;
+    font-family: "Dancing Script", serif;
+    font-size: xx-large;
 }
 
 .header{
@@ -50,62 +52,53 @@ body{
 
 .footer{
     background-color:#E6C2BF ;
-    height: 100px;
+    height: auto;
+    font-size: x-large;
 }
 /* SEARCH ELEMENT */
 
+.search-img{
+    width: 100%;
+  height: auto;
+}
+
 #search-section{
-    height: 60vh;
-    background-color: #E6C2BF; 
+    height: auto;
+    background-color: rgb(230, 194, 191); 
 }
 
 .search-bar-container{
     position: relative;
 }
 
-.search-bar-container input{
-    background-color: transparent;
-    color: #1C0D12; /* Ensure text is visible */
-    border: 1px solid #FF4D6D; /* Light border */
-    padding: 0 20px;
-    border-radius: 20px;
-    font-size: 30px;
-    text-align: left;
+.search-bar{
+    background-color: transparent !important;
+    border: 1px #E6C2BF !important;
+    box-shadow: 0 0 8px #E6C2BF !important;
+    color: #E6C2BF !important;
+    margin-left: 10px !important;
+    padding: 10px !important;
+
 }
 
-.search-bar-container input:focus{
-    border-color: #FF4D6D; /* Brighter red on focus */
-    box-shadow: 0 0 8px #FF4D6D;
-    background-color: #3a2c32ad;
+.search-bar:focus{
+    box-shadow: 0 0 8px #FF4D6D !important;
+    border: 1px #FF4D6D !important;
+    font-size: large;
+
 }
 
-.search-bar-container input:not(:placeholder-shown) {
-    background-color: #3a2c32ad; /* Change color when user starts typing */
-    color: #F8F4EC; /* Change text color for better contrast when typing */
+.search-bar::placeholder {
+    color: #E6C2BF !important; /* Light placeholder text */
+    font-size: large;
 }
 
-#search-bar-img{
-    position: absolute;
-    height: 230px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    object-fit: cover; /* Ensure the image is scaled properly */
-    z-index: 0; /* Ensure the image stays behind the search bar */
+.input-group{
+    font-family: "Lora", serif;
 }
 
-.search-bar {
-    position: relative;
-    z-index: 1; /* Make sure the search bar is on top */
-    height: 100px; /* Set a height for the search bar */
-    text-align: center; /* Center the text inside */
-}
-
-
-.search-wrapper input::placeholder {
-    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder */
+.mag-img{
+    margin-top:10px;
 }
 
 
@@ -131,7 +124,7 @@ body{
     position: relative;
     width: 100%; /* Ensures it spans the full width */
     padding:20px;
-    height:45rem;
+    height:auto;
     overflow: hidden; /* Clips anything going outside */
 
 }
@@ -147,24 +140,24 @@ body{
     display: inline-block; /* Prevent full-width background */
     color: #E6C2BF;
 }
+
+.btn-header{
+    background-color: hsla(340, 37%, 8%, 0.753);
+    padding: 3px;
+}
 .card-text{
-    color: #E6C2BF;  
+    color: #E6C2BF; 
+    font-size: larger;
 }
 
 #btn-con {
     margin-top: 2%;
     margin-bottom: 15%;
-    padding-top: 15px;
-    width: 100%; /* Adjust the width (try 40% or 30% if needed) */
-    max-width: 1300px; /* Prevent it from being too large on bigger screens */
+    padding: 60px;
     color: #E6C2BF;
     background-color: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    display: flex; /* Flexbox applied */
-    flex-direction: row; /* Align children in a row */
-    justify-content: space-between; /* Distribute cards evenly with space in between */
-    flex-wrap: wrap; /* Allow wrapping if needed */
     gap: 15px; /* Adds space between the cards */
 }
 
@@ -176,16 +169,16 @@ body{
 
 .choice {
     
-    padding: 60px; /* Adjust padding based on your design */
-    border: none; /* No border */
-    color: #E6C2BF; /* Light text color */
-    letter-spacing: 2px; /* Optional for spacing */
-    background-size: cover; /* Ensures the background image fills the button */
+    padding: 60px; 
+    border: none; 
+    color: #E6C2BF; 
+    font-size: x-large;
+    letter-spacing: 2px; 
+    background-size: cover; 
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating the image */
-    display: block; /* Makes the button a block-level element */
     text-align: center; /* Centers the text */
-    height: 20vh; /* Make sure the button fills the height of its container */
+    height: 30vh; /* Make sure the button fills the height of its container */
 }
 
 .choice:hover {
@@ -198,23 +191,21 @@ body{
 #dark_romance {
     background: url("/images/background2.jpg") no-repeat center center;
     background-size: cover; /* Ensures image fills the div */
-    background-position: center; /* Keeps the image centered */
-    display: block; /* Makes sure div behaves like a block element */
 }
 
 #romantasy{
     background: url("/images/romantic_fantasy.jpg") no-repeat center center;
-    background-size: cover; /* Ensures image fills the button */      
+    background-size: cover;    
 }
 
 #young_adult{
     background: url("/images/young_adult.jpg") no-repeat center center;
-    background-size: cover; /* Ensures image fills the button */
+    background-size: cover; 
 }
 
 #psychological_horror{
     background: url("/images/psychological_horror.png") no-repeat center center;
-    background-size: cover; /* Ensures image fills the button */
+    background-size: cover; 
 }
 
 

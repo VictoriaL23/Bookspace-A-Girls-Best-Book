@@ -1,10 +1,10 @@
 <%- include("partials/header.ejs") %>
 
-<div id="search-section" class="container-fluid text-center p-1">
+<div id="search-section" class="container-fluid text-center p-3">
     <!-- Row for Text and Image -->
-    <div class="row d-flex justify-content-center m-2">
+    <div class="row d-flex justify-content-center">
         <!-- First main column -->
-        <div class="col-md-6 col-sm-12 p-2">
+        <div class="col-md-4 col-sm-12 p-2">
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-center mb-4">
                     <img class="search-img" src="/images/rose_decoration.jpg" alt="Rose decoration image">
@@ -18,7 +18,7 @@
         </div>
     
         <!-- Second main column -->
-        <div class="col-md-6 col-sm-12 p-2">
+        <div class="col-md-4 col-sm-12 p-2">
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-center mb-4">
                     <img  class="search-img" src="/images/bookshelf.jpg" alt="Bookshelf image">
@@ -58,10 +58,12 @@
 
 
             
-            <div id="btn-con" class="container">
+            <div id="btn-con" class="container-fluid">
                 <div>
-                    <h1>Generate book</h1>
-                    <h3>Choose a genre below to generate a random book based on the selected genre!</h3>
+                    <div class="container-fluid" id="genre_heading">
+                        <h1>Generate book</h1>
+                        <h3>Choose a genre below to generate a random book based on the selected genre!</h3>
+                    </div>
                     <form id="generate_book" action="/book" method="POST">
                         <div class="mt-4 row justify-content-center">
                             <!-- First button -->
@@ -97,7 +99,7 @@
                             <!-- Fourth button -->
                             <div class="col-md-3 col-sm-6 mb-3">
                                 <div class="card border-0 " >
-                                    <button id="psychological_horror" class="choice" type="submit" name="genre" value="fiction_thrillers_psychological"><span class="btn-header"></span>Psychological Thriller</button>
+                                    <button id="psychological_horror" class="choice" type="submit" name="genre" value="fiction_thrillers_psychological"><span class="btn-header">Psychological Thriller</span></button>
                                     <div class="card-body btn-text">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>

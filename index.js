@@ -63,6 +63,7 @@ async function generateRandomBook(data){
     //select random object using the randomNum and bookList array
     const randBook = bookList[randNum];
     let workId = randBook.key;
+    //console.log ("work id" + workId);
  
     //Begin Building the Cover URL
     //If statement to get the url for the cover using one of two options.

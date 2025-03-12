@@ -5,30 +5,51 @@
 
 <% if(locals.book){ %>
 
+
+
+
     <div id="book-page-middle">
 
-    <h1> Made it </h1>
-    <img src="<%= book.cover %>" alt="Book Cover" />
-    
-    <div>
-        <%= book.pageNum %> <br>
-    </div>
+        <div id="rose1" >
+            <img class="rose" src="/images/rose_decal3.png">
+        </div>
+        <div id="rose2" >
+            <img class="rose" src="/images/rose_decal3.png">
+        </div>
+        <div id="rose3" >
+            <img class="rose" src="/images/rose_decal3.png">
+        </div>
+        <div id="rose4" >
+            <img class="rose" src="/images/rose_decal3.png">
+        </div>
+        
 
-    <div>
-        <%= book.title %> <br>
-    </div>
+        <div id="book-info">
 
-    <div>
-        <%= book.author %> <br>
-    </div>
+        <div id="book-title">
+           <span class="book_title"> <%= book.title %> </span>
+        </div>
+       
+        <div id="cover-img">
+            <img class="book-img" src="<%= book.cover %>" alt="Book Cover" />
+        </div>
 
-    <div>
-        <%= book.bookIsbn %> <br>
-    </div>
+        <div id="book-stats">
 
-    
-    <div>
-        <%= book.summary %> <br>
+           <p><strong class="bullet" >Author: </strong> <%= book.author %><br></p>
+            <p><strong class="bullet">Page Number: </strong><%= book.pageNum %> <br></p>
+            <p><strong class="bullet">ISBN: </strong><%= book.bookIsbn %> <br></p>
+            <p><strong class="bullet">Description: </strong> <%= book.summary %> <br></p>
+            
+        </div>
+
+
+        <div class="home-button">
+            <button class="button-style" onclick="window.location.href='/'">Go Back</button>
+            <button class="button-style"  onClick="window.location.reload();">Shuffle</button>
+        </div>
+        
+
     </div>
 
 </div>
